@@ -20,6 +20,7 @@ function LogIN() {
         // console.log(values);
         alert("Form Submitted")
         action.resetForm()
+        setIsSubmit(true)
       },
     });
 
@@ -34,8 +35,8 @@ function LogIN() {
     
 
   return (
-    <div className="flex h-screen justify-center items-center h-[30rem] max-h-[32rem]">
-      <div className="bg-white px-6 w-[50%] h-full pt-12">
+    <div className="flex h-screen justify-center items-center h-[30rem] max-h-[32rem] w-[60vw]">
+      <div className="bg-white px-6 w-[50%] h-full pt-12 max-md:w-[80vw]">
         <h1 className="text-3xl text-yellow-700 ">Welcome!</h1>
         <form
           onSubmit={handleSubmit}
@@ -108,7 +109,7 @@ function LogIN() {
           </button>
         </form>
       </div>
-      <div className="w-[50%] h-full ">
+      <div className="w-[50%] h-full max-md:hidden">
         <img
           src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
           className="h-full"
